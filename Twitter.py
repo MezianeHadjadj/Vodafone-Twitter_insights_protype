@@ -50,6 +50,8 @@ class get_old_tweets():
                 post["favourites_count"]=result.author.favourites_count
             
             post_id = posts.insert(post)
+            print post
+            print "#####################"
             #print posts.find_one({"kind":"Twitter"}),"resss"
             
         
@@ -105,7 +107,7 @@ class analyse():
 #twitter_stream.filter(track=["vodafone"])
 #get old
 old=get_old_tweets()
-#old.main()
+old.main()
 #analyse
-analyse=analyse()
-analyse.get_influencers()
+#analyse=analyse()
+#analyse.get_influencers()
